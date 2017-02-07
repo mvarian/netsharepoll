@@ -57,7 +57,7 @@ do
 	STIME=$(date +%s.%N)
 
 	# Execute network share remote file read
-	RESULT=`smbclient "$NETSHARE" -U "$USERNAME%$PASSWORD" -c 'get \"$RFILE\"'`
+	RESULT=`smbclient "$NETSHARE" -U "$USERNAME%$PASSWORD" -c "get \"$RFILE\""`
 
 	# End timer
 	ETIME=$(date +%s.%N)
