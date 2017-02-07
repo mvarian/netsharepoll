@@ -87,7 +87,7 @@ do
 
 	if [ -f "$RFILE" ] 
 	then
-		rm $RFILE
+		rm "$RFILE"
 	fi
 
 	# Log results
